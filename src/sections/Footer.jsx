@@ -1,5 +1,6 @@
 import React from "react";
 
+import logo from "../assets/images/logo.png";
 const Footer = () => {
   return (
     <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
@@ -26,7 +27,7 @@ const Footer = () => {
               <rect x="14" y="1" width="7" height="6"></rect>
               <rect x="14" y="11" width="7" height="12"></rect>
             </svg> */}
-            <img src="http://firmoutreach.org/site/wp-content/uploads/2022/10/mobilelogo.png" />
+            <img src={logo} />
             {/* <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
               The Firm Outreach
             </span> */}
@@ -39,29 +40,29 @@ const Footer = () => {
           </div>
         </div>
         <div class="space-y-2 text-sm">
-          <p class="text-base font-bold tracking-wide text-gray-900">
+          <p class="text-base font-bold tracking-wide text-[#2a52be]">
             Contacts
           </p>
           <div class="flex">
             <p class="mr-1 text-gray-800">Phone:</p>
             <a
-              href="tel:850-123-5021"
+              href="tel:206-478-5866"
               aria-label="Our phone"
               title="Our phone"
               class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
             >
-              850-123-5021
+              +1 206-478-5866
             </a>
           </div>
           <div class="flex">
             <p class="mr-1 text-gray-800">Email:</p>
             <a
-              href="mailto:info@lorem.mail"
+              href="mailto:thefirmoutreach@gmail.com"
               aria-label="Our email"
               title="Our email"
               class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
             >
-              info@lorem.mail
+              thefirmoutreach@gmail.com
             </a>
           </div>
           <div class="flex">
@@ -74,12 +75,12 @@ const Footer = () => {
               title="Our address"
               class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
             >
-              312 Lovely Street, NY
+              1819 Central Ave S, Kent WA
             </a>
           </div>
         </div>
         <div>
-          <span class="text-base font-bold tracking-wide text-gray-900">
+          <span class="text-base font-bold tracking-wide text-[#2a52be]">
             Social
           </span>
           <div class="flex items-center mt-1 space-x-3">
@@ -117,7 +118,7 @@ const Footer = () => {
         </div>
       </div>
       <div class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
-        <p class="text-sm text-gray-600">
+        <p class="text-sm text-[#2a52be]">
           © Copyright 2024 BLTZ Solutions. All rights reserved.
         </p>
         <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">

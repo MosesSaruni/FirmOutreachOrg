@@ -1,29 +1,61 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
+  useEffect(() => {
+    emailjs.init("Ge0B8wmAX4b2rob1V");
+  }, []);
+
+  const sendEmail = async () => {
+    const serviceId = "service_y3d7evl";
+    const templateId = "template_gosrsae";
+
+    try {
+      await emailjs.send(serviceId, templateId, {
+        name: value.name,
+        message: value.message,
+        email: value.email,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+    setValue({
+      name: "",
+      email: "",
+      message: "",
+    });
+    alert(
+      "Message sent successfully! Our team will get back to you as soon as possible."
+    );
+  };
+
+  const [value, setValue] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
   return (
-    <section class="bg-blue-50 dark:bg-slate-800" id="contact">
+    <section class="bg-blue-50 dark:bg-slate-800 my-12" id="contact">
       <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-4 lg:py-100">
         <div class="mb-4">
           <div class="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
-            <p class="text-3xl font-serif font-bold tracking-wide text-blue-600 dark:text-blue-200">
+            <p class="text-3xl font-serif font-bold tracking-wide text-[#2a52be]">
               Get in Touch
             </p>
-            {/* <h2 class="font-heading mb-4 font-bold tracking-tight text-black">
-              
-            </h2> */}
             <p class="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400">
               We'd love to hear from you!
             </p>
           </div>
         </div>
-        <div class="flex items-stretch justify-center border-2 rounded-lg border-blue-500">
+        <div class="flex items-stretch justify-center ">
           <div class="grid md:grid-cols-2">
             <div class="card h-fit max-w-6xl p-5 md:p-12" id="form">
               <h2 class="mb-4 text-2xl font-bold text-black">
                 Leave us a message
               </h2>
-              <form id="contactForm">
+              <div id="contactForm">
                 <div class="mb-6">
                   <div class="mx-0 mb-1 sm:mb-4">
                     <div class="mx-0 mb-1 sm:mb-4">
@@ -36,8 +68,13 @@ const ContactForm = () => {
                         id="name"
                         autocomplete="given-name"
                         placeholder="Your name"
-                        class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                        class="mb-2 w-full rounded-md border border-[#2a52be] py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
                         name="name"
+                        value={value.name}
+                        required
+                        onChange={(e) =>
+                          setValue({ ...value, name: e.target.value })
+                        }
                       />
                     </div>
                     <div class="mx-0 mb-1 sm:mb-4">
@@ -50,8 +87,13 @@ const ContactForm = () => {
                         id="email"
                         autocomplete="email"
                         placeholder="Your email address"
-                        class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                        class="mb-2 w-full rounded-md border border-[#2a52be] py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
                         name="email"
+                        required
+                        value={value.email}
+                        onChange={(e) =>
+                          setValue({ ...value, email: e.target.value })
+                        }
                       />
                     </div>
                   </div>
@@ -65,26 +107,35 @@ const ContactForm = () => {
                       name="textarea"
                       cols="30"
                       rows="5"
+                      required
                       placeholder="Write your message..."
-                      class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                      class="mb-2 w-full rounded-md border border-[#2a52be] py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                      value={value.message}
+                      onChange={(e) =>
+                        setValue({ ...value, message: e.target.value })
+                      }
                     ></textarea>
                   </div>
                 </div>
                 <div class="text-center">
                   <button
-                    type="submit"
-                    class="w-full bg-black text-white px-6 py-3 font-xl rounded-md sm:mb-0"
+                    // type="submit"
+                    onClick={() => sendEmail()}
+                    class="w-full bg-[#2a52be] text-white px-6 py-3 font-xl rounded-md sm:mb-0"
                   >
                     Send Message
                   </button>
                 </div>
-              </form>
+              </div>
             </div>
             <div class="h-full pr-6">
-              <p class="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
-                Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut
-                scelerisque sagittis ante, ac tincidunt sem venenatis ut.
+              <p class="mt-3 mb-12 text-lg text-bold text-[#2a52be] dark:text-slate-400 px-2">
+                Your feedback and questions are incredibly important to us.
+                Whether you have inquiries about our programs, want to get
+                involved, or have suggestions for how we can improve, we want to
+                hear from you. Our dedicated team is committed to responding
+                promptly to ensure your voice is heard and valued. Thank you for
+                reaching out and supporting our mission!
               </p>
               <ul class="mb-6 md:mb-0">
                 <li class="flex">
@@ -95,7 +146,7 @@ const ContactForm = () => {
                       height="24"
                       viewBox="0 0 24 24"
                       fill="none"
-                      stroke="currentColor"
+                      stroke="white"
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
@@ -106,15 +157,13 @@ const ContactForm = () => {
                     </svg>
                   </div>
                   <div class="ml-4 mb-4">
-                    <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">
+                    <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 ">
                       Our Address
                     </h3>
                     <p class="text-gray-600 dark:text-slate-400">
-                      1230 Maecenas Street Donec Road
+                      1819 Central Ave S
                     </p>
-                    <p class="text-gray-600 dark:text-slate-400">
-                      New York, EEUU
-                    </p>
+                    <p class="text-gray-600 dark:text-slate-400">Kent , WA</p>
                   </div>
                 </li>
                 <li class="flex">
@@ -125,7 +174,7 @@ const ContactForm = () => {
                       height="24"
                       viewBox="0 0 24 24"
                       fill="none"
-                      stroke="currentColor"
+                      stroke="white"
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
@@ -137,14 +186,14 @@ const ContactForm = () => {
                     </svg>
                   </div>
                   <div class="ml-4 mb-4">
-                    <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">
+                    <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 ">
                       Contact
                     </h3>
                     <p class="text-gray-600 dark:text-slate-400">
-                      Mobile: +1 (123) 456-7890
+                      Mobile: +1 206-478-5866
                     </p>
                     <p class="text-gray-600 dark:text-slate-400">
-                      Mail: tailnext@gmail.com
+                      Mail: thefirmoutreach@gmail.com
                     </p>
                   </div>
                 </li>
@@ -156,7 +205,7 @@ const ContactForm = () => {
                       height="24"
                       viewBox="0 0 24 24"
                       fill="none"
-                      stroke="currentColor"
+                      stroke="white"
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
@@ -167,7 +216,7 @@ const ContactForm = () => {
                     </svg>
                   </div>
                   <div class="ml-4 mb-4">
-                    <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">
+                    <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 ">
                       Working hours
                     </h3>
                     <p class="text-gray-600 dark:text-slate-400">

@@ -1,5 +1,7 @@
 import React from "react";
 
+import logo from "../assets/images/logo.png";
+
 // For scrolling to different sections of the page
 
 const scrollToSection = (section) => {
@@ -41,7 +43,7 @@ const NavbarMob = () => {
             {/* Logo */}
 
             <a href="/" className="text-md md:text-xl font-bold">
-              <img src="http://firmoutreach.org/site/wp-content/uploads/2022/10/mobilelogo.png" />
+              <img src={logo} />
             </a>
           </div>
           <div className="flex-none hidden lg:block">
@@ -82,7 +84,7 @@ const NavbarMob = () => {
               <li>
                 <a
                   onClick={() => scrollToSection("contactus")}
-                  className="cursor-pointer hover:underline"
+                  className="cursor-pointer hover:underline hover:text-black hover:bg-white border-2"
                 >
                   Contact us
                 </a>
@@ -138,7 +140,7 @@ const NavbarMob = () => {
           <li>
             <a
               onClick={() => scrollToSection("contactus")}
-              className="cursor-pointer hover:underline"
+              className="cursor-pointer hover:underline hover:text-black hover:bg-white border-2"
             >
               Contact us
             </a>

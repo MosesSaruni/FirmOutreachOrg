@@ -5,6 +5,7 @@ import Landing from "./sections/Landing";
 import ContactUs from "./sections/ContactUs";
 import AboutUs from "./sections/AboutUs";
 import Programs from "./sections/Programs";
+import Gallery from "./components/Gallery";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <div id="home">
           <Landing />
         </div>
+
         <hr class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-30 dark:via-neutral-400" />
 
         <div id="aboutus">
@@ -22,17 +24,9 @@ const App = () => {
 
         <div id="programs" className="pt-16">
           <Programs />
+          <Gallery />
         </div>
         <hr class="mt-6 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-30 dark:via-neutral-400" />
-
-        {/* <div
-          id="donate"
-          className="h-screen flex flex-col justify-center items-center"
-        >
-          <p>Donate</p>
-          <p className="text-2xl">To be removed</p>
-        </div>
-        <hr class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-30 dark:via-neutral-400" /> */}
 
         <hr class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-30 dark:via-neutral-400" />
 
