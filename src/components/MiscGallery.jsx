@@ -1,79 +1,56 @@
 import React from "react";
 
+import img5 from "../assets/images/img5.jpeg";
+import img7 from "../assets/images/img7.jpeg";
+import img9 from "../assets/images/img9.jpeg";
+
+import usecensus2020 from "../assets/images/usecensus2020.jpeg";
+import distrippes from "../assets/images/distrippes.jpeg";
+
 const MiscGallery = () => {
   return (
-    <div className="flex justify-center items-center mx-auto">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="grid gap-4">
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
-              alt=""
-            />
-          </div>
+    <>
+      <p className="text-2xl font-bold text-center text-[#2a52be] my-6">
+        More highlights
+      </p>
+      <div class="columns-1 md:columns-2 xl:columns-3 gap-7 ">
+        <div class=" break-inside-avoid mb-8">
+          <img
+            class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-all duration-300 ease-in-out"
+            src={usecensus2020}
+            alt="Gallery image"
+          />
         </div>
-        <div class="grid gap-4">
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
-              alt=""
-            />
-          </div>
+        <div class=" break-inside-avoid  mb-8">
+          <img
+            class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-all duration-300 ease-in-out"
+            src={img9}
+            alt="Gallery image"
+          />
         </div>
-        {/* <div class="grid gap-4">
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+        <div class=" break-inside-avoid  mb-8">
+          <img
+            class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-all duration-300 ease-in-out"
+            src={img5}
+            alt="Gallery image"
+          />
         </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
+        <div class=" break-inside-avoid  mb-8">
+          <img
+            class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-all duration-300 ease-in-out"
+            src={img7}
+            alt="Gallery image"
+          />
         </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+        <div class=" break-inside-avoid  mb-8">
+          <img
+            class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-all duration-300 ease-in-out"
+            src={distrippes}
+            alt="Gallery image"
+          />
         </div>
-    </div>
-    <div class="grid gap-4">
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
-        </div>
-    </div> */}
       </div>
-    </div>
+    </>
   );
 };
 

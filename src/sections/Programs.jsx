@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import youthprogrammme from "../assets/images/youthprogrammme.jpg";
-import img2 from "../assets/images/img2.jpeg";
-import img3 from "../assets/images/img3.jpeg";
-import img8 from "../assets/images/img8.jpeg";
+import youthprogrammme from "../assets/images/youthprogrammme.png";
+import img2 from "../assets/images/img2.png";
+import img3 from "../assets/images/img3.png";
+import img8 from "../assets/images/img8.png";
 
 const scrollToSection = (section) => {
   const element = document.getElementById(section);
@@ -24,127 +24,169 @@ const Programs = () => {
         <div className="hero-content flex-col lg:flex-row">
           <img
             src={youthprogrammme}
-            className="h-[300px] md:h-[500px] rounded-lg shadow-2xl"
+            className="h-[380px] md:h-[512px] rounded-lg shadow-2xl"
           />
           <div>
-            <h1 className="text-3xl font-semibold">Youth Programs</h1>
+            <h1 className="text-3xl font-semibold text-[#2a52be]">
+              Youth Programs
+            </h1>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
               viewport={{ once: true }}
             >
-              <p className="py-6">
-                We aim to promote well-balanced development in youths by
-                enabling them to attain personal and academic achievements,
-                acquire values, life skills, a sense of belonging, and
-                responsibility through being involved in community service.
+              <p className="py-6 text-md">
+                <b>Empowering Youth for a Brighter Future!</b>
+                <br />
+                Join us in fostering the growth and success of our youth! Our
+                programs are designed to nurture well-rounded development,
+                helping young individuals achieve personal and academic
+                milestones. Through engaging community service, participants
+                gain essential values, life skills, a sense of belonging, and a
+                strong sense of responsibility. Together, we can build a
+                vibrant, empowered youth community ready to make a positive
+                impact on the world.
               </p>
-              <button
+              {/* <button
                 className="bg-[#2a52be] rounded-md text-white px-4 py-2"
                 onClick={() => scrollToSection("contactus")}
               >
                 Learn more
-              </button>
+              </button> */}
             </motion.div>
           </div>
         </div>
       </div>
 
       {/* Second */}
-      <div className="flex justify-center items-center pt-10">
+      <div className="flex justify-center items-center py-10">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
             src={img2}
             className="h-[300px] md:h-[500px] rounded-lg shadow-2xl"
           />
           <div>
-            <h1 className="text-3xl font-semibold">Health Programs</h1>
+            <h1 className="text-3xl font-semibold text-[#2a52be]">
+              Health Programs
+            </h1>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
               viewport={{ once: true }}
             >
-              <p className="py-6 max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl text-[#2a52be] ">
-                Creating a healthy environment where community members have
-                access to information about medical services and insurance
-                policies.
+              <p className="py-6 text-md">
+                <b>Building a Healthier Community Together!</b>
+                <br />
+                Join us in our mission to create a healthier and more informed
+                community. Our Health Programs provide access to essential
+                information about medical services and insurance options,
+                empowering you to make the best decisions for your well-being.
+                <br />
+                We are dedicated to fostering an environment where everyone can
+                thrive, offering support and resources to help you stay informed
+                and proactive about your health. Together, we can build a future
+                where a healthy lifestyle is within everyone's reach.
               </p>
 
-              <button
+              {/* <button
                 className="bg-[#2a52be] rounded-md text-white px-4 py-2"
                 onClick={() => scrollToSection("contactus")}
               >
                 Learn more
-              </button>
+              </button> */}
             </motion.div>
           </div>
         </div>
       </div>
 
       {/* third */}
-      <div className="flex justify-center items-center pt-10">
+      <div className="flex justify-center items-center py-10">
         <div className="hero-content flex-col lg:flex-row">
           <img
             src={img3}
             className="h-[300px] md:h-[500px] rounded-lg shadow-2xl"
           />
           <div>
-            <h1 className="text-3xl font-semibold">Community Integration</h1>
+            <h1 className="text-3xl font-semibold text-[#2a52be]">
+              Community Integration
+            </h1>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
               viewport={{ once: true }}
             >
-              <p className="py-6">
-                ​Firm`s Grassroots Organizations and Integration help new
-                immigrants settle in the community, providing platforms for them
-                to interact and make friends and bond with the local residents.
-                Through their participation in various integration
-                program/activities, the new immigrants develop mutual
-                understanding with their neighbors and other residents in the
-                community.
+              <p className="py-6 text-md">
+                <b>Welcoming Newcomers, Building Stronger Bonds</b> <br />
+                Firm's Grassroots Organizations and Integration initiatives are
+                here to help new immigrants settle seamlessly into our
+                community. We provide welcoming platforms for newcomers to
+                interact, make friends, and form lasting bonds with local
+                residents.
+                <br />
+                Through a variety of engaging integration programs and
+                activities, new immigrants have the opportunity to connect with
+                their neighbors and build mutual understanding with other
+                community members. Our goal is to create an inclusive
+                environment where everyone feels at home and valued.
+                <br />
+                Join us in fostering a sense of belonging and unity. Together,
+                we can build a community that celebrates diversity and thrives
+                on mutual respect and cooperation.
               </p>
-              <button
+              {/* <button
                 className="bg-[#2a52be] rounded-md text-white px-4 py-2"
                 onClick={() => scrollToSection("contactus")}
               >
                 Learn more
-              </button>
+              </button> */}
             </motion.div>
           </div>
         </div>
       </div>
 
       {/* newe item */}
-      <div className="flex justify-center items-center pt-10">
+      <div className="flex justify-center items-center py-10">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
             src={img8}
             className="h-[300px] md:h-[500px] rounded-lg shadow-2xl"
           />
           <div>
-            <h1 className="text-3xl font-semibold">Emergency Preparedness</h1>
+            <h1 className="text-3xl font-semibold text-[#2a52be]">
+              Emergency Preparedness
+            </h1>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
               viewport={{ once: true }}
             >
-              <p className="py-6 max-w-2xl mb-4 text-2xl font-extrabold leading-none tracking-tight md:text-3xl xl:text-4xl text-[#2a52be] ">
-                Firm Outreach seeks to impart emergency preparedness knowledge
-                and skills to make a safer and more resilient community.
-                Communities learn diverse skills to help them understand people
-                of different culture, races and religions.
+              <p className="py-6 text-md">
+                <b>Creating a Safer, More Resilient Community!</b>
+                <br />
+                At Firm Outreach, we are dedicated to equipping our community
+                with the knowledge and skills needed for effective emergency
+                preparedness. Our programs are designed to build a safer and
+                more resilient community, ready to face any challenge.
+                <br /> Through our diverse training sessions, participants not
+                only learn critical emergency response techniques but also gain
+                a deeper understanding of people from different cultures, races,
+                and religions.
+                <br /> By fostering mutual respect and cooperation, we aim to
+                strengthen community bonds and ensure everyone is prepared to
+                support each other in times of need. Join us in our commitment
+                to building a connected and prepared community. Together, we can
+                create a future where everyone feels safe and supported.
               </p>
-              <button
+              {/* <button
                 className="bg-[#2a52be] rounded-md text-white px-4 py-2"
                 onClick={() => scrollToSection("contactus")}
               >
                 Learn more
-              </button>
+              </button> */}
             </motion.div>
           </div>
         </div>
@@ -156,79 +198,98 @@ const Programs = () => {
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
-        <p className="text-center text-3xl font-bold text-[#2a52be] mt-5">
+        <p className="text-center text-3xl font-bold text-[#2a52be] my-12">
           More programs
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <div className="card bg-base-100 w-96 shadow-xl">
+          <div className="card bg-base-100 w-96 shadow-xl hover:bg-[#2a52be] hover:text-white transform hover:scale-105 transition-all duration-300 ease-in-out">
+            <div className="card-body">
+              <h2 className="text-3xl font-bold">Advocacy</h2>
+              <p className="text-md">
+                Championing Equity and Social Justice At Firm Outreach. <br />
+                At Firm Outreach, we advocate for policies that promote fairness
+                and social justice for underrepresented communities. Our mission
+                is to amplify voices and drive meaningful change, ensuring equal
+                treatment and opportunities for all. Join us in building a more
+                inclusive and just society, where equity is at the heart of our
+                community.{" "}
+              </p>
+            </div>
+          </div>
+
+          <div className="card bg-base-100 w-96 shadow-xl hover:bg-[#2a52be] hover:text-white transform hover:scale-105 transition-all duration-300 ease-in-out">
+            <div className="card-body">
+              <h2 className="text-3xl font-semibold">Seniors</h2>
+              <p className="text-md">
+                Empowering Active and Meaningful Lives <br />
+                Our Seniors Program helps older adults access the support they
+                need to lead active, healthy, and fulfilling lives. We assist
+                seniors in finding available help and offer courses and
+                activities that promote wellness, social connection, and
+                lifelong learning. Join us in enhancing the quality of life for
+                seniors in our community, creating a supportive and empowering
+                environment for all.
+              </p>
+            </div>
+          </div>
+
+          {/* <div className="card bg-base-100 w-96 shadow-xl">
             <div className="card-body">
               <h2 className="text-3xl font-semibold text-[#2a52be]">
                 Advocacy
               </h2>
-              <p>
+              <p className="text-xl">
                 ​Firm Outreach advocate policies that promote equity and social
                 justice to underrepresented communities.{" "}
               </p>
             </div>
-          </div>
+          </div> */}
 
-          <div className="card bg-base-100 w-96 shadow-xl">
+          <div className="card bg-base-100 w-96 shadow-xl hover:bg-[#2a52be] hover:text-white transform hover:scale-105 transition-all duration-300 ease-in-out">
             <div className="card-body">
-              <h2 className="text-3xl font-semibold text-[#2a52be]">Seniors</h2>
-              <p>
-                Through this program seniors are assisted in accessing systems
-                to find available help. Seniors participate in courses and
-                engage in activities that empower and enable them to lead
-                active, healthy and meaningful lives in the community.
+              <h2 className="text-3xl font-semibold">Family</h2>
+              <p className="text-md">
+                Strengthening Families, Building a Stronger Community <br />
+                Our Family Program is dedicated to fostering strong family ties
+                and nurturing individuals to create a resilient community. We
+                promote community support for strengthening families, making
+                marriage and parenthood achievable, enjoyable, and celebrated.{" "}
+                <br />
+                Join us in our mission to build a supportive environment where
+                families can thrive and contribute to a vibrant, connected
+                community. Together, we can celebrate and strengthen the bonds
+                that make our community strong.
               </p>
             </div>
           </div>
 
-          <div className="card bg-base-100 w-96 shadow-xl">
+          <div className="card bg-base-100 w-96 shadow-xl hover:bg-[#2a52be] hover:text-white transform hover:scale-105 transition-all duration-300 ease-in-out">
             <div className="card-body">
-              <h2 className="text-3xl font-semibold text-[#2a52be]">
-                Advocacy
-              </h2>
-              <p>
-                ​Firm Outreach advocate policies that promote equity and social
-                justice to underrepresented communities.{" "}
+              <h2 className="text-3xl font-semibold">Farming</h2>
+              <p className="text-md">
+                Supporting Local Farmers for a Sustainable Future Our Farming
+                Program is dedicated to supporting local farmers by providing
+                essential resources, education, and community assistance. We aim
+                to promote sustainable agriculture and enhance the quality of
+                life for farming families. Join us in our mission to create a
+                thriving and valued farming community. Together, we can ensure a
+                sustainable future for agriculture and strengthen the bonds that
+                support our local farmers.
               </p>
             </div>
           </div>
 
-          <div className="card bg-base-100 w-96 shadow-xl">
+          <div className="card bg-base-100 w-96 shadow-xl hover:bg-[#2a52be] hover:text-white transform hover:scale-105 transition-all duration-300 ease-in-out">
             <div className="card-body">
-              <h2 className="text-3xl font-semibold text-[#2a52be]">Family</h2>
-              <p>
-                ​The family program promotes community support for strengthening
-                family building strong families ties and nurturing individuals
-                to create a strong community where marriage and parenthood are
-                achievable, enjoyable and celebrated.
-              </p>
-            </div>
-          </div>
-
-          <div className="card bg-base-100 w-96 shadow-xl">
-            <div className="card-body">
-              <h2 className="text-3xl font-semibold text-[#2a52be]">Farming</h2>
-              <p>
-                The farming program supports local farmers by providing
-                resources, education, and community assistance. Our goal is to
-                promote sustainable agriculture and improve the quality of life
-                for farming families, creating a thriving and valued farming
-                community.
-              </p>
-            </div>
-          </div>
-
-          <div className="card bg-base-100 w-96 shadow-xl">
-            <div className="card-body">
-              <h2 className="text-3xl font-semibold text-[#2a52be]">Housing</h2>
-              <p>
-                This program aims to help individuals access resources to find
-                affordable housing, incorporating collaboration among key
-                community stakeholders to achieve effective solutions to
-                homelessness.{" "}
+              <h2 className="text-3xl font-semibold">Housing</h2>
+              <p className="text-md">
+                Finding Solutions, Creating Homes Our Housing Program is
+                committed to helping individuals access resources for affordable
+                housing. We collaborate with key community stakeholders to
+                develop effective solutions to homelessness and ensure everyone
+                has a place to call home. Join us in our mission to create
+                sustainable housing solutions and build a community where
+                everyone has access to safe and affordable living options.{" "}
               </p>
             </div>
           </div>

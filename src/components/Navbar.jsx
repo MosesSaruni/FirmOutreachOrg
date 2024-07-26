@@ -2,6 +2,8 @@ import React from "react";
 
 import logo from "../assets/images/logo.png";
 
+import { useNavigate } from "react-router-dom";
+
 // For scrolling to different sections of the page
 
 const scrollToSection = (section) => {
@@ -12,12 +14,13 @@ const scrollToSection = (section) => {
 };
 
 const NavbarMob = () => {
+  const navigate = useNavigate();
   return (
-    <div className="drawer w-full fixed z-50  text-white">
+    <div className="drawer w-full fixed z-50  text-[#2a52be]">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
-        <div className="w-full navbar bg-black">
+        <div className="w-full navbar bg-[#d3d3d3]">
           <div className="flex-none lg:hidden">
             <label
               htmlFor="my-drawer-3"
@@ -49,42 +52,35 @@ const NavbarMob = () => {
           <div className="flex-none hidden lg:block">
             <ul className="menu menu-horizontal">
               {/* Navbar menu content here */}
-              <li>
+              {/* <li>
                 <a
-                  onClick={() => scrollToSection("home")}
-                  className="cursor-pointer hover:underline"
+                  onClick={() => navigate("/")}
+                  className="cursor-pointer text-lg font-sans hover:bg-[#2a52be] mx-1 hover:text-[#EBEBEB]"
                 >
                   Home
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
-                  onClick={() => scrollToSection("aboutus")}
-                  className="cursor-pointer hover:underline"
+                  onClick={() => navigate("/about-us")}
+                  className="cursor-pointer text-lg font-sans hover:bg-[#2a52be] mx-1 hover:text-[#EBEBEB]"
                 >
                   About Us
                 </a>
               </li>
               <li>
                 <a
-                  onClick={() => scrollToSection("programs")}
-                  className="cursor-pointer hover:underline"
+                  onClick={() => navigate("/programs")}
+                  className="cursor-pointer text-lg font-sans hover:bg-[#2a52be] mx-1 hover:text-[#EBEBEB]"
                 >
                   Programs
                 </a>
               </li>
-              {/* <li>
-                <a
-                  onClick={() => scrollToSection("aboutus")}
-                  className="cursor-pointer hover:underline"
-                >
-                  Donate
-                </a>
-              </li> */}
+
               <li>
                 <a
-                  onClick={() => scrollToSection("contactus")}
-                  className="cursor-pointer hover:underline hover:text-black hover:bg-white border-2"
+                  onClick={() => navigate("/contact-us")}
+                  className="cursor-pointer font-semibold text-lg hover:text-[#2a52be] bg-[#2a52be] text-white hover:bg-white border-2 border-[#2a52be]"
                 >
                   Contact us
                 </a>
@@ -102,29 +98,29 @@ const NavbarMob = () => {
           className="drawer-overlay"
         ></label>
 
-        <ul className="menu p-4 w-64 min-h-full bg-black">
+        <ul className="menu p-4 w-64 min-h-full bg-[#d3d3d3]">
           {/* Sidebar content here */}
 
           <li>
             <a
-              onClick={() => scrollToSection("home")}
-              className="cursor-pointer hover:underline"
+              onClick={() => navigate("/")}
+              className="cursor-pointer text-lg font-semibold hover:bg-[#2a52be] hover:text-[#EBEBEB] my-1"
             >
               Home
             </a>
           </li>
           <li>
             <a
-              onClick={() => scrollToSection("aboutus")}
-              className="cursor-pointer hover:underline"
+              onClick={() => navigate("/about-us")}
+              className="cursor-pointer text-lg font-semibold hover:bg-[#2a52be] hover:text-[#EBEBEB] my-1"
             >
               About us
             </a>
           </li>
           <li>
             <a
-              onClick={() => scrollToSection("programs")}
-              className="cursor-pointer hover:underline"
+              onClick={() => navigate("/programs")}
+              className="cursor-pointer text-lg font-semibold hover:bg-[#2a52be] hover:text-[#EBEBEB] my-1"
             >
               Programs
             </a>
@@ -139,8 +135,8 @@ const NavbarMob = () => {
           </li> */}
           <li>
             <a
-              onClick={() => scrollToSection("contactus")}
-              className="cursor-pointer hover:underline hover:text-black hover:bg-white border-2"
+              onClick={() => navigate("/contact-us")}
+              className="cursor-pointer font-semibold text-lg my-1 hover:text-[#2a52be] bg-[#2a52be] text-white hover:bg-white border-2 border-[#2a52be]"
             >
               Contact us
             </a>

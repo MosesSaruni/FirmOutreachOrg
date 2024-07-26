@@ -26,7 +26,7 @@ const ContactForm = () => {
       message: "",
     });
     alert(
-      "Message sent successfully! Our team will get back to you as soon as possible."
+      "Message sent successfully! Our team will get back to you as soon as possible!"
     );
   };
 
@@ -37,14 +37,14 @@ const ContactForm = () => {
   });
 
   return (
-    <section class="bg-blue-50 dark:bg-slate-800 my-12" id="contact">
+    <section class="my-12" id="contact">
       <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-4 lg:py-100">
         <div class="mb-4">
           <div class="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
-            <p class="text-3xl font-serif font-bold tracking-wide text-[#2a52be]">
+            <p class="text-4xl font-extrabold tracking-wide text-[#2a52be]">
               Get in Touch
             </p>
-            <p class="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400">
+            <p class="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400 font-bold">
               We'd love to hear from you!
             </p>
           </div>
@@ -129,7 +129,7 @@ const ContactForm = () => {
               </div>
             </div>
             <div class="h-full pr-6">
-              <p class="mt-3 mb-12 text-lg text-bold text-[#2a52be] dark:text-slate-400 px-2">
+              <p class="mt-3 mb-12 text-lg font-semibold dark:text-slate-400 px-2">
                 Your feedback and questions are incredibly important to us.
                 Whether you have inquiries about our programs, want to get
                 involved, or have suggestions for how we can improve, we want to

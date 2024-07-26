@@ -13,17 +13,12 @@ import distrippes from "../assets/images/distrippes.jpeg";
 import { motion } from "framer-motion";
 
 const images = [
-  usecensus2020,
+  // usecensus2020,img4,img9,img5,img7,distrippes,
   commLeaders,
   img11,
   img6,
   img10,
-  img9,
   img4,
-  img5,
-  img7,
-
-  distrippes,
 ];
 
 const Gallery = () => {
@@ -47,10 +42,11 @@ const Gallery = () => {
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
-        <div className="max-w-2xl mx-auto mt-11">
-          <h2 className="text-3xl font-extrabold text-[#2a52be] sm:text-4xl text-center mb-5">
-            Gallery
-          </h2>
+        <div className="max-w-3xl mx-auto mt-11">
+          <p className="text-xl font-extrabold text-[#2a52be] sm:text-2xl text-center mb-5">
+            Explore the highlights of our impactful journey through these
+            snapshots of our past activities and events.
+          </p>
           <div className="relative rounded-lg overflow-hidden shadow-lg">
             {/* Carousel wrapper */}
             <div className="relative h-96 md:h-96">
@@ -63,7 +59,7 @@ const Gallery = () => {
                 >
                   <img
                     src={image}
-                    className="object-contain w-full h-full"
+                    className="object-cover w-full h-full"
                     alt={`Slide ${index + 1}`}
                   />
                 </div>
@@ -85,7 +81,7 @@ const Gallery = () => {
             {/* Slider controls */}
             <button
               type="button"
-              className="flex absolute top-1/2 left-3 z-40 items-center justify-center w-10 h-10 bg-gray-200/50 rounded-full hover:bg-gray-300 focus:outline-none transition"
+              className="flex absolute top-1/2 left-3 z-40 items-center justify-center w-10 h-10 bg-gray-200/50 rounded-full bg-gray-300 focus:outline-none transition"
               onClick={prevImage}
             >
               <svg
@@ -105,7 +101,7 @@ const Gallery = () => {
             </button>
             <button
               type="button"
-              className="flex absolute top-1/2 right-3 z-40 items-center justify-center w-10 h-10 bg-gray-200/50 rounded-full hover:bg-gray-300 focus:outline-none transition"
+              className="flex absolute top-1/2 right-3 z-40 items-center justify-center w-10 h-10 bg-gray-200/50 rounded-full bg-gray-300 focus:outline-none transition"
               onClick={nextImage}
             >
               <svg
@@ -125,10 +121,10 @@ const Gallery = () => {
             </button>
           </div>
 
-          <p className="mt-5 text-center text-gray-700 dark:text-gray-300">
+          {/* <p className="mt-5 text-center text-gray-700 dark:text-gray-300">
             Explore the highlights of our impactful journey through these
             snapshots of our past activities and events.
-          </p>
+          </p> */}
         </div>
       </motion.div>
     </>
