@@ -19,9 +19,10 @@ const ProgramsPage = () => {
   return (
     <>
       <NavbarMob />
-      <div className="max-w-6xl mx-auto px-1 pt-24" id="top">
+      <div className=" mx-auto px-2 pt-24" id="top">
         <Programs />
       </div>
+
       <div className="bg-[#d3d3d3]">
         <Footer />
       </div>

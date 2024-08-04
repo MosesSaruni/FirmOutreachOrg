@@ -1,6 +1,7 @@
 import React from "react";
 
 import img5 from "../assets/images/img5.jpeg";
+import img8 from "../assets/images/img8.jpeg";
 import img7 from "../assets/images/img7.jpeg";
 import img9 from "../assets/images/img9.jpeg";
 
@@ -46,6 +47,13 @@ const MiscGallery = () => {
           <img
             class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-all duration-300 ease-in-out"
             src={distrippes}
+            alt="Gallery image"
+          />
+        </div>
+        <div class=" break-inside-avoid  mb-8">
+          <img
+            class="h-auto max-w-full rounded-lg transform hover:scale-105 transition-all duration-300 ease-in-out"
+            src={img8}
             alt="Gallery image"
           />
         </div>

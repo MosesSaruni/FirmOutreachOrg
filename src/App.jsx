@@ -10,6 +10,11 @@ import Divider from "./components/Divider";
 import { useNavigate } from "react-router";
 import { motion } from "framer-motion";
 
+import programs from "../src/assets/images/programs.png";
+import NewContactForm from "./components/NewContactForm";
+import BigCard from "./components/BigCard";
+import PeekProjects from "./components/PeekProjects";
+
 // For scrolling to different sections of the page
 
 const scrollToSection = (section) => {
@@ -35,61 +40,37 @@ const App = () => {
             <Landing />
           </div>
 
-          <Divider />
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5 }}
+            viewport={{ once: false }}
+          >
+            <BigCard />
+          </motion.div>
 
           <div id="aboutus">
             <AboutUs />
           </div>
 
-          <Divider />
-
           <div
             id="programs"
             className="pt-16 max-w-7xl mx-auto px-2 flex justify-center flex-col items-center space-y-4"
           >
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              viewport={{ once: false }}
-            >
-              <p className="text-center font-extrabold font-serif text-3xl text-[#2a52be] py-4">
-                Our Programs
-              </p>
-              <p className="text-center font-semibold text-xl">
-                At Firm Outreach, we believe in the power of community and the
-                strength that comes from unity. Our mission is to build bridges
-                and create a sense of belonging for everyone, fostering a future
-                filled with hope and understanding. By connecting hearts and
-                minds, we strive to make a lasting difference in the lives of
-                those we touch. Join us in our journey to promote harmony and
-                cohesion, and see how you can be a part of this transformative
-                effort. Discover more about our initiatives and how you can get
-                involved.
-              </p>
-            </motion.div>
-
-            <button
-              className="bg-[#2a52be] rounded-md text-white font-semibold text-lg p-3"
-              onClick={() => navigate("/programs")}
-            >
-              View Projects
-            </button>
+            <PeekProjects />
           </div>
 
-          <Divider />
-
-          <div id="contactus" className="pt-16">
+          <div id="contactus" className="pt-16 bg-[#2a52be] mt-16">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 1.5 }}
               viewport={{ once: false }}
             >
-              <p className="text-center font-extrabold text-3xl text-[#2a52be] py-4 font-serif">
+              <p className="text-center font-extrabold text-3xl text-white py-2 font-serif">
                 Contact us!
               </p>
-              <p className="mt-3 mb-12 text-lg font-semibold dark:text-slate-400 px-2 text-center max-w-6xl mx-auto">
+              <p className="mt-3 text-lg font-semibold dark:text-slate-400 px-2 text-center max-w-6xl mx-auto text-white">
                 Your feedback and questions are incredibly important to us.
                 Whether you have inquiries about our programs, want to get
                 involved, or have suggestions for how we can improve, we want to
@@ -97,11 +78,11 @@ const App = () => {
                 promptly to ensure your voice is heard and valued. Thank you for
                 reaching out and supporting our mission!
               </p>
-              <ContactUs />
+              <div className="max-w-5xl mx-auto px-2 pt-4">
+                <NewContactForm />
+              </div>
             </motion.div>
           </div>
-
-          <Divider />
         </div>
       </div>
       <div className="bg-[#d3d3d3]">

@@ -54,34 +54,35 @@ const NewContactForm = () => {
           >
             <div class="mb-3 w-full">
               <label
-                class="block font-medium mb-[2px] text-teal-700"
+                class="block font-medium mb-[2px] text-teal-700 text-white"
                 htmlFor="exampleInput90"
               >
                 Name
               </label>
+
               <input
                 type="text"
-                class="px-2 py-2 border w-full outline-none rounded-md"
-                id="exampleInput90"
-                placeholder="Name"
+                // placeholder="Enter Your Last Name"
+                className="input input-bordered input-primary w-full text-black placeholder:text-black/70"
                 value={value.name}
                 required
                 onChange={(e) => setValue({ ...value, name: e.target.value })}
               />
+
+              {/*  */}
             </div>
 
             <div class="mb-3 w-full">
               <label
-                class="block font-medium mb-[2px] text-teal-700"
+                class="block font-medium mb-[2px]  text-white"
                 htmlFor="exampleInput90"
               >
                 Email
               </label>
               <input
                 type="email"
-                class="px-2 py-2 border w-full outline-none rounded-md"
+                className="input input-bordered input-primary w-full  text-black placeholder:text-black/70"
                 id="exampleInput90"
-                placeholder="Enter your email address"
                 required
                 value={value.email}
                 onChange={(e) => setValue({ ...value, email: e.target.value })}
@@ -90,16 +91,13 @@ const NewContactForm = () => {
 
             <div class="mb-3 w-full">
               <label
-                class="block font-medium mb-[2px] text-teal-700"
+                class="block font-medium mb-[2px] text-teal-700 text-white"
                 htmlFor="exampleInput90"
               >
                 Message
               </label>
               <textarea
-                class="px-2 py-2 border rounded-[5px] w-full outline-none"
-                name=""
-                id=""
-                placeholder="Leave us a message..."
+                className="input input-bordered input-primary w-full  text-black placeholder:text-black/70 h-32 p-1"
                 required
                 value={value.message}
                 onChange={(e) =>
@@ -110,13 +108,13 @@ const NewContactForm = () => {
 
             <button
               type="submit"
-              class="mb-6 inline-block w-full rounded bg-[#2a52be] px-6 py-2.5 font-medium uppercase leading-normal text-white hover:shadow-md hover:bg-teal-500"
+              class="mb-6 inline-block w-full rounded border-white border-2 bg-[#2a52be] px-6 py-2.5 font-medium uppercase leading-normal text-white hover:shadow-md hover:bg-teal-500"
             >
               Send
             </button>
           </form>
 
-          <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12 bg-[#2a52be] text-white font-serif p-4 rounded-md">
+          <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12 text-white font-serif p-4 rounded-md">
             <div class="flex flex-wrap">
               <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:px-6">
                 <div class="flex items-start">

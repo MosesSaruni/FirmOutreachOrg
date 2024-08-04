@@ -2,9 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import logo from "../assets/images/logo.png";
-const navigate = useNavigate();
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 mt-6">
       <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -73,7 +73,7 @@ const Footer = () => {
           </span>
           <div
             class="flex items-center mt-1 space-x-3 cursor-pointer"
-            onClick={navigate("/social-media-coming-soon")}
+            onClick={() => navigate("/social-media-coming-soon")}
           >
             <a class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
               <svg viewBox="0 0 24 24" className="h-5" fill="currentColor">
@@ -120,14 +120,14 @@ const Footer = () => {
               Privacy Policy
             </a>
           </li>
-          <li>
+          {/* <li>
             <a
               href="/"
               class="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400 cursor-pointer"
             >
               Terms &amp; Conditions
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>

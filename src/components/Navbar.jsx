@@ -46,24 +46,24 @@ const NavbarMob = () => {
             {/* Logo */}
 
             <a href="/" className="text-md md:text-xl font-bold">
-              <img src={logo} />
+              <img src={logo} className="w-16" />
             </a>
           </div>
           <div className="flex-none hidden lg:block">
             <ul className="menu menu-horizontal">
               {/* Navbar menu content here */}
-              {/* <li>
+              <li>
                 <a
                   onClick={() => navigate("/")}
-                  className="cursor-pointer text-lg font-sans hover:bg-[#2a52be] mx-1 hover:text-[#EBEBEB]"
+                  className="cursor-pointer text-lmd font-sans hover:bg-[#2a52be] mx-1 hover:text-[#EBEBEB]"
                 >
                   Home
                 </a>
-              </li> */}
+              </li>
               <li>
                 <a
                   onClick={() => navigate("/about-us")}
-                  className="cursor-pointer text-lg font-sans hover:bg-[#2a52be] mx-1 hover:text-[#EBEBEB]"
+                  className="cursor-pointer text-md font-sans hover:bg-[#2a52be] mx-1 hover:text-[#EBEBEB]"
                 >
                   About Us
                 </a>
@@ -71,16 +71,16 @@ const NavbarMob = () => {
               <li>
                 <a
                   onClick={() => navigate("/programs")}
-                  className="cursor-pointer text-lg font-sans hover:bg-[#2a52be] mx-1 hover:text-[#EBEBEB]"
+                  className="cursor-pointer text-md font-sans hover:bg-[#2a52be] mx-1 hover:text-[#EBEBEB]"
                 >
-                  Programs
+                  Our Programs
                 </a>
               </li>
 
               <li>
                 <a
                   onClick={() => navigate("/contact-us")}
-                  className="cursor-pointer font-semibold text-lg hover:text-[#2a52be] bg-[#2a52be] text-white hover:bg-white border-2 border-[#2a52be]"
+                  className="cursor-pointer font-semibold text-md text-[#2a52be] hover:bg-[#2a52be] hover:text-white bg-white border-2 border-[#2a52be]"
                 >
                   Contact us
                 </a>

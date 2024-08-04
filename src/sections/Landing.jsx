@@ -3,6 +3,7 @@ import "../App.css";
 import { motion } from "framer-motion";
 
 import cover1 from "../assets/images/cover1.jpg";
+import { TypeAnimation } from "react-type-animation";
 
 const scrollToSection = (section) => {
   const element = document.getElementById(section);
@@ -19,7 +20,7 @@ const Landing = () => {
         backgroundImage: `url(${cover1})`,
       }}
     >
-      <div className="hero-overlay bg-opacity-75"></div>
+      <div className="hero-overlay bg-opacity-35"></div>
       <div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -32,23 +33,27 @@ const Landing = () => {
             <h1 className="mb-5 text-5xl font-bold font-serif">
               The Firm Outreach
             </h1>
-            <p className="mb-5 font-semibold text-2xl">
-              "Together we stand, together we win"
-            </p>
-            <p className="mb-5 text-sm">
+
+            <p className="mb-2 text-md">
               To engage, educate, advocate and empower individuals to create a
               successful community, overcoming barriers which prevent growth.
             </p>
 
-            {/* CTA button */}
-            {/* <button
-              className="border-2 hover:bg-white hover:text-[#2a52be] px-4 py-2 rounded-md bg-[#2a52be] text-white transition-all duration-300 ease-in-out"
-              onClick={() => scrollToSection("contactus")}
-            >
-              <p className="text-xl">Get in touch!</p>
-            </button> */}
+            <div className="font-serif mb-2">
+              <TypeAnimation
+                sequence={[
+                  // Same substring at the start will only be typed once, initially
+                  "Together we stand,",
+                  1750,
+                  "Together we win!",
+                  2000,
+                ]}
+                speed={10}
+                style={{ fontSize: "2em" }}
+                repeat={Infinity}
+              />
+            </div>
 
-            {/* option 2 cta */}
             <div class="relative inline-flex  group">
               <div class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#2a52be] via-[#44BCFF] to-[#2a52be] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt border-2 border-white"></div>
               <a

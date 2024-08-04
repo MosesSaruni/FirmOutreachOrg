@@ -19,20 +19,22 @@ const ContactPage = () => {
   return (
     <>
       <Navbar />
-      <div className="max-w-6xl mx-auto pt-16 px-2" id="top">
-        <p className="text-4xl font-extrabold tracking-wide text-[#2a52be] text-center mt-10">
-          Contact Us
-        </p>
+      <div className="h-screen bg-[#2a52be] text-white pb-4">
+        <div className="max-w-6xl mx-auto pt-16 px-2" id="top">
+          <p className="text-4xl font-extrabold tracking-wide text-white text-center mt-10">
+            Contact Us
+          </p>
 
-        <p className="mt-3 mb-12 text-lg font-semibold dark:text-slate-400 px-2 text-center">
-          Your feedback and questions are incredibly important to us. Whether
-          you have inquiries about our programs, want to get involved, or have
-          suggestions for how we can improve, we want to hear from you. Our
-          dedicated team is committed to responding promptly to ensure your
-          voice is heard and valued. Thank you for reaching out and supporting
-          our mission!
-        </p>
-        <NewContactForm />
+          <p className="mt-3 mb-12 text-lg font-semibold dark:text-slate-400 px-2 text-center">
+            Your feedback and questions are incredibly important to us. Whether
+            you have inquiries about our programs, want to get involved, or have
+            suggestions for how we can improve, we want to hear from you. Our
+            dedicated team is committed to responding promptly to ensure your
+            voice is heard and valued. Thank you for reaching out and supporting
+            our mission!
+          </p>
+          <NewContactForm />
+        </div>
       </div>
       <Footer />
     </>
