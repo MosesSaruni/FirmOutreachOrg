@@ -2,14 +2,18 @@ import React, { useEffect } from "react";
 import NavbarMob from "../components/Navbar";
 import Footer from "../sections/Footer";
 import { motion } from "framer-motion";
-import imgFood from "../assets/images/imgFood.png";
 import Gallery from "../components/Gallery";
 import MiscGallery from "../components/MiscGallery";
+
+import { useNavigate } from "react-router";
+
+// MEDIA IMPORTS
+// IMPORT SYNTAX BELOW
+// import {myimage} from "../assets/images/{myimage}.{format}";
 import community from "../assets/images/community.png";
 import govt from "../assets/images/govt.png";
 import immg from "../assets/images/immg.png";
 import outreach from "../assets/images/outreach.png";
-import { useNavigate } from "react-router";
 
 // For scrolling to different sections of the page
 
@@ -67,6 +71,7 @@ const AboutPage = () => {
             viewport={{ once: false }}
           >
             <img
+              // Replace IMAGE_9 below
               src={outreach}
               alt="About Us Image"
               class="object-cover rounded-lg "
@@ -155,16 +160,17 @@ const AboutPage = () => {
         </div>
         {/* end of What We do section */}
 
-        {/* Gallery section */}
+        {/*section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: false }}
         >
+          {/* Contains GALLERY_IMAGES */}
           <Gallery />
         </motion.div>
-        {/* end of Gallery section */}
+        {/* end ofsection */}
 
         {/* Our approach section */}
         <div className="pt-24 max-w-5xl mx-auto">
@@ -273,6 +279,7 @@ const AboutPage = () => {
           transition={{ duration: 1 }}
           viewport={{ once: false }}
         >
+          {/*Contains IMAGE_10, IMAGE_11, IMAGE_12, IMAGE_13, IMAGE_14, IMAGE_15 */}
           <MiscGallery />
         </motion.div>
         {/* end of Second Gallery section */}

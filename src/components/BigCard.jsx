@@ -32,6 +32,7 @@ const BigCard = () => {
                 onClick={() => navigate("/about-us")}
                 className="mx-auto cursor-pointer shadow-xl bg-cover bg-center min-h-150 relative border-8 border-[#2a52be]  transform duration-500 hover:-translate-y-12   group"
                 style={{
+                  // IMAGE_2
                   backgroundImage: `url(${distrippes})`,
                 }}
                 // `url(${cover1})`
@@ -53,6 +54,7 @@ const BigCard = () => {
                 onClick={() => navigate("/programs")}
                 className="mx-auto cursor-pointer shadow-xl bg-cover bg-center min-h-150 relative border-8 border-[#2a52be]  transform duration-500 hover:-translate-y-12   group"
                 style={{
+                  // IMAGE_3
                   backgroundImage: `url(${img2})`,
                 }}
               >
@@ -73,6 +75,7 @@ const BigCard = () => {
                 onClick={() => navigate("/contact-us")}
                 className="mx-auto cursor-pointer shadow-xl bg-cover bg-center min-h-150 relative border-8 border-[#2a52be]  transform duration-500 hover:-translate-y-12   group"
                 style={{
+                  // IMAGE_4
                   backgroundImage: `url(${usecensus2020})`,
                 }}
               >

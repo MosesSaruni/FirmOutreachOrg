@@ -32,6 +32,7 @@ const PeekProjects = () => {
           <div class="flex justify-center mb-14 gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8">
             <div class="group cursor-pointer w-full max-lg:max-w-xl lg:w-1/3 border border-[#2a52be] rounded-2xl p-5 transition-all duration-300 hover:border-indigo-600">
               <div class="flex items-center mb-6">
+                {/* Replace IMAGE_6 below */}
                 <img src={youth} alt="Harsh image" class="rounded-lg" />
               </div>
               <div class="block">
@@ -50,6 +51,7 @@ const PeekProjects = () => {
             <div class="group cursor-pointer w-full max-lg:max-w-xl lg:w-1/3 border border-[#2a52be] rounded-2xl p-5 transition-all duration-300 hover:border-indigo-600">
               <div class="flex items-center mb-6">
                 <img
+                  // Replace IMAGE_7 below
                   src={healthcare}
                   alt="Harsh image"
                   class="rounded-lg w-full"
@@ -71,6 +73,7 @@ const PeekProjects = () => {
             <div class="group cursor-pointer w-full max-lg:max-w-xl lg:w-1/3 border border-[#2a52be] rounded-2xl p-5 transition-all duration-300 hover:border-indigo-600">
               <div class="flex items-center mb-6">
                 <img
+                  // Replace IMAGE_8 below
                   src={community2}
                   alt="Alexa image"
                   class="rounded-lg w-full"

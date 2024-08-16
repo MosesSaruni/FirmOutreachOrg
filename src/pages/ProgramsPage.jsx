@@ -20,6 +20,7 @@ const ProgramsPage = () => {
     <>
       <NavbarMob />
       <div className=" mx-auto px-2 pt-24" id="top">
+        {/* Contains IMAGE_16, IMAGE_17, IMAGE_18, IMAGE_19, IMAGE_20 */}
         <Programs />
       </div>
 

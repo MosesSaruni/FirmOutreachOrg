@@ -2,15 +2,10 @@ import React, { useEffect } from "react";
 import NavbarMob from "./components/Navbar";
 import Footer from "./sections/Footer";
 import Landing from "./sections/Landing";
-import ContactUs from "./sections/ContactUs";
 import AboutUs from "./sections/AboutUs";
-import Programs from "./sections/Programs";
-import Gallery from "./components/Gallery";
-import Divider from "./components/Divider";
 import { useNavigate } from "react-router";
 import { motion } from "framer-motion";
 
-import programs from "../src/assets/images/programs.png";
 import NewContactForm from "./components/NewContactForm";
 import BigCard from "./components/BigCard";
 import PeekProjects from "./components/PeekProjects";
@@ -37,6 +32,7 @@ const App = () => {
       <div>
         <div className="pt-16 z-0 relative flex flex-col justify-center">
           <div id="top">
+            {/* Contains IMAGE_1 */}
             <Landing />
           </div>
 
@@ -46,10 +42,12 @@ const App = () => {
             transition={{ duration: 1.5 }}
             viewport={{ once: false }}
           >
+            {/* Contains IMAGE_2 , IMAGE_3 , IMAGE_4 */}
             <BigCard />
           </motion.div>
 
           <div id="aboutus">
+            {/* Contains IMAGE_5 */}
             <AboutUs />
           </div>
 
@@ -57,6 +55,7 @@ const App = () => {
             id="programs"
             className="pt-16 max-w-7xl mx-auto px-2 flex justify-center flex-col items-center space-y-4"
           >
+            {/* Contains IMAGE_6 , IMAGE_7 , IMAGE_8 */}
             <PeekProjects />
           </div>
 

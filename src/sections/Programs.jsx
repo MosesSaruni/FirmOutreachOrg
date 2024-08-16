@@ -1,12 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Divider from "../components/Divider";
 
+// MEDIA IMPORTS
+// IMPORT SYNTAX BELOW
+// import {myimage} from "../assets/images/{myimage}.{format}";
 import youthprogrammme from "../assets/images/youthprogrammme.png";
 import img2 from "../assets/images/img2.png";
 import img3 from "../assets/images/img3.png";
 import img8 from "../assets/images/img8.png";
 import programs from "../assets/images/programs.png";
-import Divider from "../components/Divider";
 
 const scrollToSection = (section) => {
   const element = document.getElementById(section);
@@ -52,6 +55,7 @@ const Programs = () => {
           viewport={{ once: false }}
         >
           <img
+            // Replace IMAGE_16 below
             src={programs}
             alt="About Us Image"
             class="object-cover rounded-lg "
@@ -73,6 +77,7 @@ const Programs = () => {
             viewport={{ once: false }}
           >
             <img
+              // Replace IMAGE_17 below
               src={youthprogrammme}
               alt="About Us Image"
               class="object-cover rounded-lg "
@@ -116,6 +121,7 @@ const Programs = () => {
             viewport={{ once: false }}
           >
             <img
+              // Replace IMAGE_18 below
               src={img2}
               alt="About Us Image"
               class="object-cover rounded-lg "
@@ -161,6 +167,7 @@ const Programs = () => {
             viewport={{ once: false }}
           >
             <img
+              // Replace IMAGE_19 below
               src={img3}
               alt="About Us Image"
               class="object-cover rounded-lg "
@@ -210,6 +217,7 @@ const Programs = () => {
             viewport={{ once: false }}
           >
             <img
+              // Replace IMAGE_20 below
               src={img8}
               alt="About Us Image"
               class="object-cover rounded-lg "

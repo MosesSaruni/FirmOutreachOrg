@@ -61,6 +61,7 @@ const AboutUs = () => {
               viewport={{ once: false }}
             >
               <img
+                // Replace IMAGE_5 below
                 src={imgAbout}
                 alt="About Us Image"
                 class="object-cover rounded-lg shadow-md "

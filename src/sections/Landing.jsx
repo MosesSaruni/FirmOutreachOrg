@@ -2,7 +2,10 @@ import React from "react";
 import "../App.css";
 import { motion } from "framer-motion";
 
+// MEDIA  IMPORTS
 import cover1 from "../assets/images/cover1.jpg";
+import example from "../assets/images/example.jpg";
+
 import { TypeAnimation } from "react-type-animation";
 
 const scrollToSection = (section) => {
@@ -17,6 +20,7 @@ const Landing = () => {
     <div
       className="hero min-h-screen"
       style={{
+        // IMAGE_1
         backgroundImage: `url(${cover1})`,
       }}
     >

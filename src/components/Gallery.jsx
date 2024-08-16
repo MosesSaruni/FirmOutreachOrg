@@ -1,25 +1,17 @@
 import React, { useState } from "react";
+
+// MEDIA IMPORTS
 import img4 from "../assets/images/img4.jpeg";
-import img5 from "../assets/images/img5.jpeg";
-import img7 from "../assets/images/img7.jpeg";
-import img9 from "../assets/images/img9.jpeg";
 import img10 from "../assets/images/img10.jpeg";
 import img6 from "../assets/images/img6.jpeg";
 import commLeaders from "../assets/images/commLeaders.jpeg";
-import usecensus2020 from "../assets/images/usecensus2020.jpeg";
 import img11 from "../assets/images/img11.jpeg";
-import distrippes from "../assets/images/distrippes.jpeg";
+import example from "../assets/images/example.jpg";
 
 import { motion } from "framer-motion";
 
-const images = [
-  // usecensus2020,img4,img9,img5,img7,distrippes,
-  commLeaders,
-  img11,
-  img6,
-  img10,
-  img4,
-];
+// Add or remove Gallery images here
+const images = [commLeaders, img11, img6, img10, img4];
 
 const Gallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
