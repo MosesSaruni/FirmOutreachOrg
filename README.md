@@ -3,6 +3,8 @@
 
 This is the official website for a Seattle-based non-profit organization 'The Firm Outreach', designed to showcase their impactful work and provide an easy way for visitors to get in touch. Built with **Next.js** and styled using **Tailwind CSS**, the site offers a clean, responsive, and modern user experience.
 
+Visit the website at **https://firmoutreach.org/**
+
 ## 🚀 Features
 
 - 📢 **Showcases the Organization's Work**  
